@@ -9,7 +9,7 @@ This is a custom integration for Home Assistant that retrieves air quality data 
 
 ## Installation
 1. **Download the files**
-   Clone or download this repository and place the `stoteles_gamta_lt` folder inside:
+   Clone or download this repository and place the `ltu_air_quality` folder inside:
    ```
    config/custom_components/
    ```
@@ -19,13 +19,34 @@ This is a custom integration for Home Assistant that retrieves air quality data 
    config/
    ├── custom_components/
    │   ├── ltu_air_quality/
-   │   │   ├── __init__.py
    │   │   ├── sensor.py
    │   │   ├── manifest.json
    ```
 
 3. **Restart Home Assistant**
    - Navigate to `Settings > System > Restart`
+
+## Available Monitoring Stations
+Here are the available monitoring stations and their respective `station_id`s:
+```
+0001: Vilnius, Senamiestis
+0002: Vilnius, Lazdynai
+0003: Vilnius, Žirmūnai
+0004: Vilnius, Savanorių prosp.
+0012: Panevėžys, Centras
+0021: Naujoji Akmenė
+0022: Šiauliai
+0023: Mažeikiai
+0031: Klaipėda, Centras
+0033: Klaipėda, Šilutės pl.
+0041: Kaunas, Dainava
+0042: Jonava
+0043: Kėdainiai
+0044: Kaunas, Noreikiškės
+0051: Aukštaitija
+0052: Dzūkija
+0053: Žemaitija
+```
 
 ## Configuration
 Add the following to your `configuration.yaml` file:
