@@ -18,7 +18,7 @@ This is a custom integration for Home Assistant that retrieves air quality data 
    ```
    config/
    ├── custom_components/
-   │   ├── stoteles_gamta_lt/
+   │   ├── ltu_air_quality/
    │   │   ├── __init__.py
    │   │   ├── sensor.py
    │   │   ├── manifest.json
@@ -31,10 +31,10 @@ This is a custom integration for Home Assistant that retrieves air quality data 
 Add the following to your `configuration.yaml` file:
 ```yaml
 sensor:
-  - platform: stoteles_gamta_lt
+  - platform: ltu_air_quality
     station_id: "0033"
 
-  - platform: stoteles_gamta_lt
+  - platform: ltu_air_quality
     station_id: "0031"
 ```
 
@@ -56,6 +56,6 @@ If the integration is not working as expected, check logs in:
   logger:
     default: warning
     logs:
-      custom_components.stoteles_gamta_lt: debug
+      custom_components.ltu_air_quality: debug
   ```
 
