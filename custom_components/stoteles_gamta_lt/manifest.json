@@ -1,0 +1,9 @@
+{
+  "domain": "stoteles_gamta_lt",
+  "name": "Stoteles Gamta LT",
+  "version": "1.0",
+  "documentation": "https://github.com/EdmisP/stoteles_gamta_lt/",
+  "dependencies": [],
+  "codeowners": ["@EdmisP"],
+  "requirements": []
+}
