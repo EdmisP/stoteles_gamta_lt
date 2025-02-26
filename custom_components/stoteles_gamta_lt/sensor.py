@@ -36,8 +36,6 @@ class StotelesGamtaLtSensor(Entity):
         self._station_id = station_id
         self._pollutant = pollutant
         self._name = f"ltu_air_quality_{self._station_id}_{self._pollutant.lower()}"
-        self._station_id = station_id
-        self._pollutant = pollutant
         self._state = None
         self._unit = "ug/m3" if pollutant not in ["CO"] else "mg/m3"
     
