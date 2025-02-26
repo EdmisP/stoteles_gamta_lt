@@ -2,7 +2,7 @@
   "domain": "ltu_air_quality",
   "name": "Lithuania Air Quality",
   "version": "1.0",
-  "documentation": "https://github.com/EdmisP/stoteles_gamta_lt/",
+  "documentation": "https://github.com/EdmisP/ltu_air_quality/",
   "dependencies": [],
   "codeowners": ["@EdmisP"],
   "requirements": []
