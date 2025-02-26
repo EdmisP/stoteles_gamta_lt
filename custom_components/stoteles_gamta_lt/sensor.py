@@ -28,10 +28,10 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
     station_id = config[CONF_STATION_ID]
     name = config[CONF_NAME]
     
-    sensors = [StotelesGamtaLtSensor(name, station_id, pollutant) for pollutant in POLLUTANTS]
+    sensors = [LtuAirQualitySensor(name, station_id, pollutant) for pollutant in POLLUTANTS]
     async_add_entities(sensors, True)
 
-class StotelesGamtaLtSensor(Entity):
+class LtuAirQualitySensor(Entity):
     def __init__(self, name, station_id, pollutant):
         self._station_id = station_id
         self._pollutant = pollutant
