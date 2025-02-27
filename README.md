@@ -80,3 +80,87 @@ If the integration is not working as expected, check logs in:
       custom_components.ltu_air_quality: debug
   ```
 
+## Home Assistant Gauge Meter Examples
+You can visualize air quality values using the Home Assistant gauge meter. Below are some examples with severity levels based on the thresholds from `stoteles.gamta.lt/ap3`.
+
+### PM10 (Particulate Matter 10)
+```yaml
+type: gauge
+entity: sensor.ltu_air_quality_0031_pm10
+name: KD10
+needle: true
+severity:
+  green: 16
+  yellow: 31
+  red: 51
+max: 100
+min: 0
+```
+
+### PM2.5 (Particulate Matter 2.5)
+```yaml
+type: gauge
+entity: sensor.ltu_air_quality_0033_pm25
+name: KD2.5
+needle: true
+severity:
+  green: 11
+  yellow: 21
+  red: 26
+max: 75
+```
+
+### Carbon Monoxide (CO)
+```yaml
+type: gauge
+entity: sensor.ltu_air_quality_0031_co
+name: CO
+severity:
+  green: 3
+  yellow: 7
+  red: 11
+needle: true
+max: 13
+```
+
+### Nitrogen Dioxide (NO2)
+```yaml
+type: gauge
+entity: sensor.ltu_air_quality_0031_no2
+name: NO2
+severity:
+  green: 51
+  yellow: 101
+  red: 201
+needle: true
+max: 400
+```
+
+### Sulfur Dioxide (SO2)
+```yaml
+type: gauge
+entity: sensor.ltu_air_quality_0031_so2
+name: SO2
+needle: true
+severity:
+  green: 51
+  yellow: 101
+  red: 301
+max: 500
+```
+
+### Ozone (O3)
+```yaml
+type: gauge
+entity: sensor.ltu_air_quality_0033_o3
+name: O3
+severity:
+  green: 61
+  yellow: 121
+  red: 181
+needle: true
+max: 240
+```
+
+These gauge meters provide an easy way to track air quality levels directly in your Home Assistant dashboard.
+
